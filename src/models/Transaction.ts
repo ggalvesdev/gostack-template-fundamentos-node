@@ -7,7 +7,8 @@ class Transaction {
 
   value: number;
 
-  type: 'income' | 'outcome';
+  type: string;
+  // type: 'income' | 'outcome';
 
   constructor({ title, value, type }: Omit<Transaction, 'id'>) {
     this.id = uuid();
